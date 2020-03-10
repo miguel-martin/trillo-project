@@ -1,0 +1,31 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark-1);
+
+    min-height: 50rem; // dev
+}
+
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;  // flex-grow flex-shrink flex-basis
+                    //  flex-grow: 0 -> dont want the element to grow besides the defined width
+                    //  flex-shrink: 0 -> the element should not shrink if there is no enough space
+                    //  flex-basis: 0 -> percentaje of the width
+}
+
+.hotel-view {
+    background-color: #fff;
+    flex: 1; // the element should grow as much as it can
+}
