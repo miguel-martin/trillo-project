@@ -2,17 +2,38 @@
 // LOGO
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;
 }
 
 ///////////////////////////////////////
 // SEARCH BOX
 .search {
-        &__input {
+
+        background-color: orangered; // dev
+
+        flex: 0 0 40%; // grow shrink width
+
+        &__input { 
+            font-family: inherit;   // text input does not inherit font family...
+            font-size: inherit;     // ... nor the size...
+            color: inherit;         // ... or the color...
+            background-color: var(--color-grey-light-1);
+            border: none;
+            padding: .7rem 2rem;
+            border-radius: 100px;
+            width: 90%;
+            transition: all .2s;
+
+            &:focus {
+                outline: none;
+                width: 100%;
+                background-color: var(--color-grey-light-2);
+            }
 
         }
 
         &__button {
-
+            
         }
 
         &__icon {
@@ -24,8 +45,10 @@
 
 ///////////////////////////////////////
 // USER NAVIGATION
-
 .user-nav {
+
+    background-color: yellowgreen;
+
     &__icon-box {
 
     }
