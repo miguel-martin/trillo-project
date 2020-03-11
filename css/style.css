@@ -66,7 +66,6 @@ body {
   margin-left: 3rem; }
 
 .search {
-  background-color: orangered;
   flex: 0 0 40%;
   display: flex;
   align-items: center;
@@ -81,11 +80,13 @@ body {
     border-radius: 100px;
     width: 90%;
     transition: all .2s;
-    margin-right: -3.5rem; }
+    margin-right: -3.15rem; }
     .search__input:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-2); }
+  .search__input:focus + .search__button {
+    background-color: var(--color-grey-light-2); }
   .search__button {
     background-color: var(--color-grey-light-1);
     border: none; }
@@ -95,7 +96,8 @@ body {
       transform: translateY(2px); }
   .search__icon {
     height: 2rem;
-    width: 2rem; }
+    width: 2rem;
+    fill: var(--color-grey-dark-3); }
 
 .user-nav {
   background-color: yellowgreen; }
