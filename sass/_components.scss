@@ -13,6 +13,10 @@
 
         flex: 0 0 40%; // grow shrink width
 
+        display: flex; 
+        align-items: center;    // centers along the cross axis
+        justify-content: center; // centers along the main axis
+
         &__input { 
             font-family: inherit;   // text input does not inherit font family...
             font-size: inherit;     // ... nor the size...
@@ -23,6 +27,7 @@
             border-radius: 100px;
             width: 90%;
             transition: all .2s;
+            margin-right: -3.5rem; // make the button move into the input!
 
             &:focus {
                 outline: none;
@@ -33,7 +38,16 @@
         }
 
         &__button {
-            
+            background-color: var(--color-grey-light-1);
+            border: none; 
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                transform: translateY(2px);
+            }
         }
 
         &__icon {
