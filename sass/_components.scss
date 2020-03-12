@@ -153,7 +153,7 @@
         background-color: var(--color-primary);
         transform: scaleY(0);
         //transform-origin: top; // center;
-        transition: transform .2s, width .4s .2s; // delay the width growth to the moment the scaleY is completed (.2s)
+        transition: transform .2s, width .4s cubic-bezier(1,0,0,1) .2s; // delay the width growth to the moment the scaleY is completed (.2s)
 
     }
 
