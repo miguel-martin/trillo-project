@@ -152,12 +152,14 @@
         width: 3px;
         background-color: var(--color-primary);
         transform: scaleY(0);
-        transform-origin: top;
-        transition: transform .2s;
+        //transform-origin: top; // center;
+        transition: transform .2s, width .4s .2s; // delay the width growth to the moment the scaleY is completed (.2s)
+
     }
 
     &__item:hover::before {
         transform: scaleY(1);
+        width: 100%;
     }
 
     &__link:link,
