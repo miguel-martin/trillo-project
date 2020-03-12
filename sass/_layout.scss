@@ -27,9 +27,16 @@
                     //  flex-grow: 0 -> dont want the element to grow besides the defined width
                     //  flex-shrink: 0 -> the element should not shrink if there is no enough space
                     //  flex-basis: 0 -> percentaje of the width
+
+    display: flex;
+    flex-direction: column; // change the main axis to vertical
+    justify-content: space-between;
 }
 
 .hotel-view {
-    background-color: #fff;
+
     flex: 1; // the element should grow as much as it can
+
+    height: 80rem; // dev
+    background-color: orangered; // dev
 }
