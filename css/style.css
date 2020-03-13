@@ -81,7 +81,8 @@ body {
   margin-right: 4.5rem; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  font-size: 1.4; }
 
 .logo {
   height: 3.25rem;
@@ -322,4 +323,11 @@ body {
       margin-right: -1.5rem; }
 
 .review {
-  background-color: #fff; }
+  background-color: #fff;
+  box-shadow: var(--shadow-light-1);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
