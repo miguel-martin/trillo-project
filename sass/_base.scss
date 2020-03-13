@@ -15,6 +15,9 @@
 
     
     --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, .3); // x y blur color
+    --shadow-light-1: 0 2rem 4rem rgba(0,0,0,0.06);
+
+    --line: 1px solid var(--color-grey-light-2);
 }
 
 * {
