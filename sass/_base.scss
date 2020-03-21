@@ -20,6 +20,10 @@
     --line: 1px solid var(--color-grey-light-2);
 }
 
+$bp-largest: 75em;      // 1200px/16=75em
+$bp-large: 68.75em;     // 1100px/16=68.75em
+$bp-medium: 56.25em;    // 900px/16=56.25em
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +38,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // To make 1rem = 10px... because 10/16=62.5
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
